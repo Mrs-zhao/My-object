@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>百度一下，你就知道</title>
+    <link rel="stylesheet" href="css/bd.css">
+</head>
+<body>
+<div class="wrapper" id="wrapper"></div>
+<div class="outer">
+
+    <!--导航-->
+    <div class="nav clearfix">
+        <!--导航左边-->
+        <div class="navL">
+            <!--北京-->
+            <div class="weather">
+                <!--天气-->
+                <div class="weatherInTop">
+                    <a class="a1" href="javascript:;">
+                        <div class="show-weather">
+                            <span class="bj">北京：</span>
+                            <span class="bj-P"></span>
+                            <em>26℃</em>
+                        </div>
+                        <div class="show-pollution">
+                            <span class="show-pollution-name">轻度</span>
+                            <span class="show-pollution-num">180</span>
+                            <span class="show-vertical">|</span>
+                        </div>
+                    </a>
+                    <!--北京天气：hover-->
+                    <div class="weatherInBot">
+                        <i class="i1"></i>
+                        <div class="top">
+                            <span class="yellow"></span>
+                            <p class="describe">北京市发布霾黄色预警</p>
+                        </div>
+                        <div class="center">
+                            <p class="date">10月03日</p>
+                            <span class="calendar">农历</span>
+                            <p class="Month">九月初三</p>
+                            <a class="future" href="javascript:;">未来七天天气</a>
+                            <div class="set">
+                                <i class="i2"></i>
+                                <a class="setIn" href="javascript:;">设置</a>
+                            </div>
+                        </div>
+                        <div class="bottom">
+                            <div class="week-one">
+                                <span class="today">今天(周一)</span>
+                                <i class="i3"></i>
+                                <em class="degree">27℃</em>
+                                <p class="wind">霾转阵雨微风</p>
+                            </div>
+                            <div class="week week-one">
+                                <span class="today">明天(周二)</span>
+                                <i class="i3"></i>
+                                <em class="degree">22～13℃</em>
+                                <p class="wind">阵雨转晴微风</p>
+                            </div>
+                            <div class="week week-3 week-one">
+                                <span class="today">后天(周三)</span>
+                                <i class="i3"></i>
+                                <em class="degree">24～14℃</em>
+                                <p class="wind">晴转多云微风</p>
+                            </div>
+                            <div class="week-4 week week-one">
+                                <span class="today">周四</span>
+                                <i class="i3"></i>
+                                <em class="degree">21～15℃</em>
+                                <p class="wind">阴转阵雨微风</p>
+                            </div>
+                            <div class="week week-one">
+                                <span class="today">周五</span>
+                                <i class="i3"></i>
+                                <em class="degree">19～13℃</em>
+                                <p class="wind">阵雨转晴微风</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--宝箱-->
+            <div class="chest">
+                <a class="a1" href="javascript:;">
+                    <span></span>
+                    <span>宝箱</span>
+                </a>
+                <a class="a2" href="javascript:;">
+                    <span></span>
+                    <span>换肤</span>
+                </a>
+                <a class="a3" href="javascript:;">
+                    <span></span>
+                    <span>消息</span>
+                </a>
+            </div>
+        </div>
+        <!--导航右边-->
+        <div class="navR">
+            <ul>
+                <li><a href="javascript:;">糯米</a></li>
+                <li><a href="javascript:;">新闻</a></li>
+                <li><a href="javascript:;">hao123</a></li>
+                <li><a href="javascript:;">地图</a></li>
+                <li><a href="javascript:;">视频</a></li>
+                <li><a href="javascript:;">贴吧</a></li>
+            </ul>
+            <div class="custom">
+                <div class="user">
+                    <a class="username" href="javascript:;">高兴不？</a>
+                    <div class="VIP">
+                        <i class="i4"></i>
+                        <a href="javascript:;">我的VIP</a>
+                        <a href="javascript:;">个人中心</a>
+                        <a href="javascript:;">账号设置</a>
+                        <a href="javascript:;">意见反馈</a>
+                        <a href="javascript:;">退出</a>
+                    </div>
+                </div>
+                <div class="tool">
+                    <a class="setUp" href="javascript:;">设置</a>
+                    <div class="search">
+                        <i class="i4"></i>
+                        <a href="javascript:;">搜索设置</a>
+                        <a href="javascript:;">高级搜索</a>
+                        <a href="javascript:;">关闭预测</a>
+                        <a href="javascript:;">搜索历史</a>
+                    </div>
+                </div>
+            </div>
+            <div class="more" id="more">
+                <span class="products" id="products">更多产品</span>
+                <div class="sidebar" id="sidebar">
+                    <a href="javascript:;"></a>
+                    <a href="javascript:;"></a>
+                    <a href="javascript:;"></a>
+                    <a href="javascript:;"></a>
+                    <a href="javascript:;"></a>
+                    <a href="javascript:;"></a>
+                    <a href="javascript:;"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--百度搜索框-->
+    <div class="Middle">
+        <img class="logo" src="image/logo_white_fe6da1ec.png" alt="">
+        <div class="bd">
+            <span class="btn"></span>
+            <input type="text" class="text">
+            <input type="submit" value="百度一下" class="button">
+        </div>
+    </div>
+
+    <!--中间部分-->
+    <div class="content">
+        <!--点击-->
+        <div class="navBar" id="navBar">
+            <h1>
+                <span class="menu-item  menu"  id="follow">
+                <i class="i6"></i>
+                <b class="navBarL">我的关注</b>
+                </span>
+            </h1>
+            <div class="navBarC" id="navBarC">
+                <div class="item"><span class="menu-item" id="bg">推荐</span></div>
+                <div class="item"><span class="menu-item">导航</span></div>
+                <div class="item"><span class="menu-item">视频</span></div>
+                <div class="item"><span class="menu-item">购物</span></div>
+            </div>
+            <div class="push"><span class="navBarR" id="navBarR"></span></div>
+        </div>
+        <div class="hide" id="hide">
+            <div class="cardsetting" id="cardsetting">
+                <div class="clear  clearfix">
+                    <div class="cards-left">
+                        <h3>已订阅频道</h3>
+                        <span class="flow">我的关注</span>
+                        <div class="cards">
+                            <div class="hv">
+                                <div class="s-mod-icon"></div>
+                                <div class="s-mod-title">音乐</div>
+                            </div>
+                            <div class="hv">
+                                <div class="s-mod-icon"></div>
+                                <div class="s-mod-title">推荐</div>
+                            </div>
+                            <div class="hv">
+                                <div class="s-mod-icon"></div>
+                                <div class="s-mod-title">推荐</div>
+                            </div>
+                            <div class="hv">
+                                <div class="s-mod-icon"></div>
+                                <div class="s-mod-title">推荐</div>
+                            </div>
+                            <div class="hv">
+                                <div class="s-mod-icon"></div>
+                                <div class="s-mod-title">推荐</div>
+                            </div>
+                            <div class="hv">
+                                <div class="s-mod-icon"></div>
+                                <div class="s-mod-title">推荐</div>
+                            </div>
+                            <div class="hv">
+                                <div class="s-mod-icon"></div>
+                                <div class="s-mod-title">推荐</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cards-right clearfix">
+                        <h3>未订阅频道</h3>
+                        <div class="cards-right-B"></div>
+                    </div>
+                </div>
+                <div class="cards-bottom">
+                    <div class="cards-bottom-T">
+                        <span class="question"></span>
+                        <a href="javascript:;">
+                            <span class="choice-border checked"></span>
+                            <span class="scene">情景推荐</span>
+                        </a>
+                        <a class="aa" href="javascript:;">
+                            <span class="cur"></span>
+                            <span class="channel">隐藏频道</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--呈现-->
+        <div class="concern " id="concern">
+            <span class="add">添加</span>
+        </div>
+        <div class="recommend  option">
+            <div class="newsL">
+                <div>
+                    <i class="i8"></i>
+                    <div class="following">
+                        <span class="footprint"></span>
+                        <p class="Interest">以下信息根据您的兴趣推荐</p>
+                    </div>
+                    <i class="i9"></i>
+                </div>
+                <div class="news-special">
+                    <div>
+                        <a class="Russia" href="javascript:;">反击美国“敌对行动”：俄终止“钚”协定</a>
+                    </div>
+                    <ul class="pic clearfix">
+                        <li><img src="image/u=2933808262.JPEG" alt=""></li>
+                        <li><img src="image/u=3039301463.JPEG" alt=""></li>
+                        <li><img src="image/u=2030872988.JPEG" alt=""></li>
+                    </ul>
+                </div>
+                <div class="phoenix">
+                    <span class="phoenix-Int">凤凰网</span>
+                    <p class="time">10-05 09:21</p>
+                    <span class="hot">热点</span>
+                </div>
+                <div class="South">
+                    <div class="hover">
+                        <a class="Unqualified" href="javascript:;">南方黑芝麻糊年内两次上黑榜 3批次产品不合格</a>
+                    </div>
+                    <div class="newsTime">
+                        <span class="phoenix-Int2">新浪财经</span>
+                        <p class="time2">10-05 01:20</p>
+                        <span class="hot2">热点</span>
+                    </div>
+                </div>
+            </div>
+            <div class="newsR">
+                <div class="newsR-top">
+                    <!--<div class="title-text">-->
+                        <a class="spot" href="javascript:;">实时热点</a>
+                    <!--</div>-->
+                    <a class="switch" href="javascript:;">
+                        <span class="tool"></span>
+                        <span class="change">换一换</span>
+                    </a>
+                </div>
+                <ul class="newsR-bottom">
+                    <li><a href="javascript:;">四川老板集体进京</a><span>新</span></li>
+                    <li><a href="javascript:;">好声音学员被撞</a><span>新</span></li>
+                    <li><a href="javascript:;">张馨予爆炸头亮相</a><span>新</span></li>
+                    <li><a href="javascript:;">1米8重30公斤</a><span>新</span></li>
+                    <li><a href="javascript:;">电影票房持续缩水</a></li>
+                    <li><a href="javascript:;">中国留学生遭枪杀</a></li>
+                    <li><a href="javascript:;">陈冠希在警局逗留</a></li>
+                    <li><a href="javascript:;">物理学诺奖揭晓</a></li>
+                    <li><a href="javascript:;">10元药被炒上万</a></li>
+                    <li><a href="javascript:;">老师街头被忽悠</a></li>
+                    <li><a href="javascript:;">与女主播为邻报警</a></li>
+                    <li><a href="javascript:;">精神病犯持刀行凶</a></li>
+                    <li><a href="javascript:;">昆凌童年旧照曝光</a></li>
+                    <li><a href="javascript:;">曝黄子稻调解失败</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="navigation  option">
+            <div class="box clearfix">
+                <h2>猜你喜欢</h2>
+                <div class="box-posi">
+                    <div class="Shop">
+                        <a href="javascript:;">
+                            <img src="image/nuomi.png" alt="">
+                            <span class="nuomi">百度糯米</span>
+                        </a>
+                    </div>
+                    <a class="flag" href="javascript:;">返</a>
+                    <span class="Rebate"><a href="javascript:;">最高返利50.25%</a></span>
+                </div>
+                <div class="box-posi">
+                    <div class="Shop">
+                        <a href="javascript:;">
+                            <img src="image/jingdong.png" alt="">
+                            <span class="nuomi">京东商城</span>
+                        </a>
+                    </div>
+                    <a class="flag" href="javascript:;">返</a>
+                    <span class="Rebate"><a href="javascript:;">最高返利50.25%</a></span>
+                </div>
+                <div class="box-posi">
+                    <div class="Shop">
+                        <a href="javascript:;">
+                            <img src="image/1haodian.png" alt="">
+                            <span class="nuomi">1号店</span>
+                        </a>
+                    </div>
+                    <a class="flag" href="javascript:;">返</a>
+                    <span class="Rebate"><a href="javascript:;">最高返利50.25%</a></span>
+                </div>
+                <div class="box-posi">
+                    <div class="Shop">
+                        <a href="javascript:;">
+                            <img src="image/wei.png" alt="">
+                            <span class="nuomi">唯品会</span>
+                        </a>
+                    </div>
+                    <a class="flag" href="javascript:;">返</a>
+                    <span class="Rebate"><a href="javascript:;">最高返利50.25%</a></span>
+                </div>
+                <div class="box-posi">
+                    <div class="Shop">
+                        <a href="javascript:;">
+                            <img src="image/suning.png" alt="">
+                            <span class="nuomi">苏宁易购</span>
+                        </a>
+                    </div>
+                    <a class="flag" href="javascript:;">返</a>
+                    <span class="Rebate"><a href="javascript:;">最高返利50.25%</a></span>
+                </div>
+                <div class="box-posi">
+                    <div class="Shop">
+                        <a href="javascript:;">
+                            <img src="image/dang.png" alt="">
+                            <span class="nuomi">当当网</span>
+                        </a>
+                    </div>
+                    <a class="flag" href="javascript:;">返</a>
+                    <span class="Rebate"><a href="javascript:;">最高返利50.25%</a></span>
+                </div>
+                <div class="box-posi">
+                    <div class="Shop">
+                        <a href="javascript:;">
+                            <img src="image/nuomi.png" alt="">
+                            <span class="nuomi">微信</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="box-posi">
+                    <div class="Shop">
+                        <a href="javascript:;">
+                            <img src="image/nuomi.png" alt="">
+                            <span class="nuomi">斗鱼</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="box-posi">
+                    <div class="Shop">
+                        <a href="javascript:;">
+                            <img src="image/nuomi.png" alt="">
+                            <span class="nuomi">腾讯</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="box-posi">
+                    <div class="Shop">
+                        <a href="javascript:;">
+                            <img src="image/nuomi.png" alt="">
+                            <span class="nuomi">百度糯米</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="box-posi">
+                <div class="Shop">
+                    <a href="javascript:;">
+                        <img src="image/nuomi.png" alt="">
+                        <span class="nuomi">百度糯米</span>
+                    </a>
+                </div>
+            </div>
+                <div class="box-posi">
+                    <div class="Shop">
+                        <a href="javascript:;">
+                            <img src="image/nuomi.png" alt="">
+                            <span class="nuomi">百度糯米</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="box-posi">
+                    <div class="Shop">
+                        <a href="javascript:;">
+                            <img src="image/nuomi.png" alt="">
+                            <span class="nuomi">百度糯米</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="box-posi">
+                    <div class="Shop">
+                        <a href="javascript:;">
+                            <img src="image/nuomi.png" alt="">
+                            <span class="nuomi">百度糯米</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="box-posi">
+                    <div class="Shop">
+                        <a href="javascript:;">
+                            <img src="image/nuomi.png" alt="">
+                            <span class="nuomi">百度糯米</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="box-posi">
+                    <div class="Shop">
+                        <a href="javascript:;">
+                            <img src="image/nuomi.png" alt="">
+                            <span class="nuomi">百度糯米</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="box-posi">
+                    <div class="Shop">
+                        <a href="javascript:;">
+                            <img src="image/nuomi.png" alt="">
+                            <span class="nuomi">百度糯米</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="box-posi">
+                    <div class="Shop">
+                        <a href="javascript:;">
+                            <img src="image/nuomi.png" alt="">
+                            <span class="nuomi">百度糯米</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="box-posi">
+                    <div class="Shop">
+                        <a href="javascript:;">
+                            <img src="image/nuomi.png" alt="">
+                            <span class="nuomi">百度糯米</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="box-posi">
+                    <div class="Shop">
+                        <a href="javascript:;">
+                            <img src="image/nuomi.png" alt="">
+                            <span class="nuomi">百度糯米</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="box-posi">
+                    <div class="Shop">
+                        <a href="javascript:;">
+                            <img src="image/nuomi.png" alt="">
+                            <span class="nuomi">百度糯米</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="box-posi">
+                    <div class="Shop">
+                        <a href="javascript:;">
+                            <img src="image/nuomi.png" alt="">
+                            <span class="nuomi">百度糯米</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="box-posi">
+                    <div class="Shop">
+                        <a href="javascript:;">
+                            <img src="image/nuomi.png" alt="">
+                            <span class="nuomi">百度糯米</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="box-posi">
+                    <div class="Shop">
+                        <a href="javascript:;">
+                            <img src="image/nuomi.png" alt="">
+                            <span class="nuomi">百度糯米</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="video  option"></div>
+        <div class="shopping  option"></div>
+
+        <!--动画-->
+        <div class="rect" id="rect">
+            <div class="animate-arrow" id="arrow"></div>
+        </div>
+    </div>
+
+    <!--底部-->
+    <div class="homepage">
+        <a class="first" href="javascript:;">设为首页</a>
+        <div class="read">
+            <span class="nb">©2016 Baidu</span>
+            <a class="must" href="javascript:;">使用百度前必读</a>
+            <a class="feedback" href="javascript:;">意见反馈</a>
+            <span class="card">京ICP证030173号&nbsp;</span>
+            <img src="image/copy_rignt_24.png" alt="">
+        </div>
+    </div>
+    <div class="security">
+        <a class="number" href="javascript:;">
+            <i class="i7"></i>
+            京公网安备<b>11000002000001</b>号
+        </a>
+    </div>
+
+    <!--滚动出现的搜索框-->
+    <div class="bdTop clearfix" id="bdTop">
+        <a href="javascript:;" class="bdTopImg">
+            <img src="image/logo_top.png" alt="">
+        </a>
+        <input type="text" class="inputTop">
+        <a href="javascript:" class="cameraTop"></a>
+        <a href="javascript:;" class="btnTop">百度一下</a>
+    </div>
+</div>
+</body>
+</html>
+<script src="js/jquery-1.11.3.min.js"></script>
+<script src="js/utils-1.js"></script>
+<script src="js/move.js"></script>
+<script src="js/bd.js"></script>
+<script>
+    var $navBarR = $('#navBarR');
+    var $hide = $('#hide');
+    $navBarR.click(function(event){
+        $hide.stop().slideToggle();
+        event.stopPropagation();
+    });
+    $("body").click(function(event){
+        var $this = $(event.target);
+        event.stopPropagation();
+        if(!$this.closest("#navBarR").length){
+            $hide.slideUp();
+        }
+    });
+    $hide.click(function(event){
+        $hide.slideDown();
+        event.stopPropagation();
+    })
+</script>
